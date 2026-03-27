@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadForge — Local Lead Generation Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Lead<span>Forge</span> ◆</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#stats">Results</a></li>
+      <li><a href="#cta">Contact</a></li>
+    </ul>
+    <a href="#" class="btn-nav" onclick="openModal(event)">Get Free Audit →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge fade-in">◆ 1,000+ Pages Deployed &amp; Ranking</div>
+        <h1 class="hero-title fade-in stagger-1">
+          We Put Local Businesses on Page 1 — Then Fill Their Phone With <em>Leads.</em>
+        </h1>
+        <p class="hero-sub fade-in stagger-2">
+          We've built 1,000+ SEO landing pages that rank in local search and generate 40+ daily leads for service businesses across the UK &amp; beyond.
+        </p>
+        <div class="hero-ctas fade-in stagger-3">
+          <a href="#" class="btn-primary" onclick="openModal(event)">Get a Free Growth Audit ↗</a>
+          <a href="#case-studies" class="btn-ghost">See Our Results ↓</a>
+        </div>
+        <div class="trust-bar fade-in stagger-4">
+          <span class="trust-item">Plumbing &amp; Heating</span>
+          <span class="trust-item">Bathroom Renovation</span>
+          <span class="trust-item">Surveyors</span>
+          <span class="trust-item">Cleaning Services</span>
+          <span class="trust-item">Roofing &amp; HVAC</span>
+          <span class="trust-item">Landscaping</span>
+        </div>
+      </div>
+      <div class="hero-visual fade-in stagger-2">
+        <div class="hero-mockup">
+          <div class="lead-pill"><div class="lead-pill-dot"></div> New lead — Manchester</div>
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dot bd-r"></div>
+              <div class="browser-dot bd-y"></div>
+              <div class="browser-dot bd-g"></div>
+              <div class="browser-url">emergencyplumber-manchester.co.uk</div>
+            </div>
+            <div class="browser-content">
+              <div class="page-hero-mock">
+                <div class="mock-h1">Emergency Plumber Manchester — Fast Response, 24/7</div>
+                <div class="mock-sub">Trusted by 2,300+ homeowners. No call-out fee. Book in 60 seconds.</div>
+                <div class="mock-btn">📞 Get a Free Quote →</div>
+              </div>
+              <div class="mock-stats">
+                <div class="mock-stat"><div class="mock-num" id="mockLeads">0</div><div class="mock-label">Leads Today</div></div>
+                <div class="mock-stat"><div class="mock-num">#1</div><div class="mock-label">Google Rank</div></div>
+                <div class="mock-stat"><div class="mock-num" id="mockPages">0</div><div class="mock-label">Pages Live</div></div>
+              </div>
+              <div class="mock-graph">
+                <div class="graph-label">Monthly Leads Growth</div>
+                <div class="graph-bars">
+                  <div class="g-bar" style="height:15%"></div>
+                  <div class="g-bar" style="height:22%"></div>
+                  <div class="g-bar" style="height:30%"></div>
+                  <div class="g-bar" style="height:35%"></div>
+                  <div class="g-bar" style="height:45%"></div>
+                  <div class="g-bar" style="height:55%"></div>
+                  <div class="g-bar" style="height:70%"></div>
+                  <div class="g-bar" style="height:80%"></div>
+                  <div class="g-bar" style="height:88%"></div>
+                  <div class="g-bar" style="height:100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rank-badge"><strong>#1</strong>organic rank achieved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-card fade-in">
+        <span class="stat-num" data-target="1000" data-suffix="+">0</span>
+        <span class="stat-label">Landing Pages Deployed</span>
+      </div>
+      <div class="stat-card fade-in stagger-1">
+        <span class="stat-num" data-target="40" data-suffix="+">0</span>
+        <span class="stat-label">Daily Leads Generated</span>
+      </div>
+      <div class="stat-card fade-in stagger-2">
+        <span class="stat-num" data-target="12" data-suffix="+">0</span>
+        <span class="stat-label">Niches Served</span>
+      </div>
+      <div class="stat-card fade-in stagger-3">
+        <span class="stat-num" data-target="95" data-suffix="%">0</span>
+        <span class="stat-label">Client Retention Rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section id="positioning" class="section-pad">
+    <div class="container">
+      <div class="pos-grid">
+        <div class="pos-text fade-in">
+          <div class="section-label">Our Difference</div>
+          <h2 class="section-title">We Don't Build Websites.<br>We Build Lead Machines.</h2>
+          <p>Most agencies hand you a pretty site and call it done. <strong>We think like your growth partner.</strong> Every page we build starts with the question your customer is typing into Google right now — and ends with them calling your business.</p>
+          <p>Our system is built on <strong>local search intent</strong>. We map every service you offer against every city, town, and postcode your customers search from. Then we build a dedicated, optimized landing page for each combination — pages that rank, pages that convert.</p>
+          <p>At scale. At speed. <strong>Without sacrificing quality.</strong> Businesses that work with us go from invisible to page 1 — and stay there. Most see first results within 30–60 days.</p>
+        </div>
+        <div class="fade-in stagger-2">
+          <div class="checklist-card">
+            <div class="checklist-title"><span>//</span> What You Get</div>
+            <div class="check-item"><span class="check-icon">✓</span>Pages engineered for local search intent, not just looks</div>
+            <div class="check-item"><span class="check-icon">✓</span>Each page targets a specific service + location keyword</div>
+            <div class="check-item"><span class="check-icon">✓</span>Full conversion system: forms, CTAs, trust signals, tracking</div>
+            <div class="check-item"><span class="check-icon">✓</span>Bulk deployment for multi-location and franchise businesses</div>
+            <div class="check-item"><span class="check-icon">✓</span>Schema markup, metadata, and internal linking — handled</div>
+            <div class="check-item"><span class="check-icon">✓</span>Live reporting dashboard — see rankings and leads in real time</div>
+            <div class="check-item"><span class="check-icon">✓</span>First results in 30–60 days, compounding over 6–12 months</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-pad">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-label">Services</div>
+        <h2 class="section-title">What We Build For You</h2>
+        <p class="section-sub">Every service is engineered around one outcome: more qualified leads from Google.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in stagger-1">
+          <div class="service-icon">🎯</div>
+          <div class="service-name">SEO Landing Page Development</div>
+          <p class="service-desc">Hyper-targeted pages built for local search intent. Each page ranks for a specific service + location keyword — so your business shows up exactly when someone is ready to hire.</p>
+        </div>
+        <div class="service-card fade-in stagger-2">
+          <div class="service-icon">📡</div>
+          <div class="service-name">Local Lead Generation Systems</div>
+          <p class="service-desc">We don't just rank pages — we build full lead capture systems with optimized forms, CTAs, and tracking so you know exactly where every lead comes from.</p>
+        </div>
+        <div class="service-card fade-in stagger-3">
+          <div class="service-icon">⚡</div>
+          <div class="service-name">Bulk Page Deployment</div>
+          <p class="service-desc">Scaling to 50, 100, or 500 locations? We have a proven system to deploy, optimize, and maintain large page libraries without sacrificing quality or rankings.</p>
+        </div>
+        <div class="service-card fade-in stagger-4">
+          <div class="service-icon">📈</div>
+          <div class="service-name">Conversion Rate Optimization</div>
+          <p class="service-desc">Traffic without conversions is just vanity. We test headlines, CTAs, layouts, and trust signals to ensure every visitor has a reason to call or submit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="section-pad">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-label">Case Studies</div>
+        <h2 class="section-title">Real Businesses. Real Results.</h2>
+        <p class="section-sub">No generic graphs. Here's exactly what we did — and what it produced.</p>
+      </div>
+      <div class="cs-grid">
+        <div class="cs-card fade-in stagger-1">
+          <div class="cs-tag">Plumbing &amp; Heating · Multi-Location</div>
+          <div class="cs-title">Emergency Plumber — North England</div>
+          <p class="cs-problem">Zero organic presence outside their main city. 100% reliant on costly pay-per-click.</p>
+          <ul class="cs-bullets">
+            <li>Built 120 location-specific pages targeting "[service] in [city]" keywords</li>
+            <li>Structured internal linking and schema to signal topical authority</li>
+            <li>Deployed in phased rollout across 8 counties</li>
+          </ul>
+          <div class="cs-results">
+            <div class="cs-metric">120 pages deployed</div>
+            <div class="cs-metric">68 ranking on Page 1 within 90 days</div>
+            <div class="cs-metric">0 → 40+ daily enquiries</div>
+          </div>
+        </div>
+        <div class="cs-card fade-in stagger-2">
+          <div class="cs-tag">Bathroom Renovation · Contractor</div>
+          <div class="cs-title">Bathroom Fitter — Greater Manchester</div>
+          <p class="cs-problem">Relied entirely on paid ads. Rising CPCs were eating into margins every month.</p>
+          <ul class="cs-bullets">
+            <li>45 SEO landing pages by county + renovation service type</li>
+            <li>Conversion-led page design with trust badges and review embeds</li>
+            <li>Google Business integration for map pack visibility</li>
+          </ul>
+          <div class="cs-results">
+            <div class="cs-metric">+300% organic leads in 6 months</div>
+            <div class="cs-metric">Ad spend cut by 60%</div>
+            <div class="cs-metric">28 → 110 leads/month</div>
+          </div>
+        </div>
+        <div class="cs-card fade-in stagger-3">
+          <div class="cs-tag">Cleaning Services · National Franchise</div>
+          <div class="cs-title">Cleaning Franchise — 12 Locations UK</div>
+          <p class="cs-problem">Each location had a generic page that wasn't ranking locally for anything.</p>
+          <ul class="cs-bullets">
+            <li>Rebuilt 12 location pages + 60 service-specific pages per branch</li>
+            <li>Unique content strategy, no templated duplication</li>
+            <li>Local review schema + NAP consistency across all pages</li>
+          </ul>
+          <div class="cs-results">
+            <div class="cs-metric">720 pages total — live &amp; indexed</div>
+            <div class="cs-metric">Avg. #4 ranking per city</div>
+            <div class="cs-metric">200+ monthly leads across network</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section-pad">
+    <div class="container">
+      <div class="fade-in">
+        <div class="section-label">Our Process</div>
+        <h2 class="section-title">The System Behind Every Result</h2>
+        <p class="section-sub">Not guesswork. Not templates. A repeatable growth engine built on 1,000+ pages of learning.</p>
+      </div>
+      <div class="process-steps">
+        <div class="process-step fade-in">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <div class="step-tag">Foundation</div>
+            <div class="step-title">Discovery &amp; Keyword Research</div>
+            <p class="step-desc">We map every service + location combination your ideal customer is searching for. Search volume, intent, competition — all analysed before a single page is written. No assumptions.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in stagger-1">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <div class="step-tag">Architecture</div>
+            <div class="step-title">Page Architecture &amp; Structure</div>
+            <p class="step-desc">We design a landing page structure engineered for conversion AND rankings — not just looks. Every element placed with intent: headline, trust signal, CTA, FAQ, schema.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in stagger-2">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <div class="step-tag">Build</div>
+            <div class="step-title">Content &amp; SEO Buildout</div>
+            <p class="step-desc">Every page is written for human intent and optimised for Google. Schema markup, metadata, internal linking, mobile performance — all handled. Nothing missed, nothing left to chance.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in stagger-3">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <div class="step-tag">Launch</div>
+            <div class="step-title">Deployment &amp; Indexing</div>
+            <p class="step-desc">Pages go live on a structured rollout plan. We submit, monitor crawl status, fix indexing issues, and iterate based on early ranking signals. Your pages don't just go live — they get found.</p>
+          </div>
+        </div>
+        <div class="process-step fade-in stagger-4">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <div class="step-tag">Visibility</div>
+            <div class="step-title">Lead Tracking &amp; Reporting</div>
+            <p class="step-desc">You get a live dashboard showing rankings, traffic, and leads. Full visibility, zero mystery. Weekly updates. Direct access to your account team — no agency fog.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why" class="section-pad">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;max-width:600px;margin:0 auto 56px;">
+        <div class="section-label" style="justify-content:center;">Why Us</div>
+        <h2 class="section-title">Why Agencies &amp; Business Owners Choose Us to Scale</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card fade-in stagger-1">
+          <div class="why-icon">📊</div>
+          <div class="why-title">ROI-First Thinking</div>
+          <p class="why-desc">Every decision is made based on business outcome, not design preference. If it doesn't drive leads, it doesn't ship.</p>
+        </div>
+        <div class="why-card fade-in stagger-2">
+          <div class="why-icon">🏗️</div>
+          <div class="why-title">Proven at Scale</div>
+          <p class="why-desc">1,000+ pages built. We've solved the problems that come at scale before they ever hit you. No learning curve on your dime.</p>
+        </div>
+        <div class="why-card fade-in stagger-3">
+          <div class="why-icon">⚡</div>
+          <div class="why-title">Speed Without Sacrifice</div>
+          <p class="why-desc">Bulk deployments without quality loss. Our templating + QA system means 100 pages equals the same quality as 1.</p>
+        </div>
+        <div class="why-card fade-in stagger-1">
+          <div class="why-icon">🔭</div>
+          <div class="why-title">Full Transparency</div>
+          <p class="why-desc">Live dashboards, weekly reports, and direct communication. You always know where your rankings sit and exactly what's in progress.</p>
+        </div>
+        <div class="why-card fade-in stagger-2">
+          <div class="why-icon">🎯</div>
+          <div class="why-title">Niche Expertise</div>
+          <p class="why-desc">We've operated across 12+ local service verticals. We know what converts in plumbing, renovation, cleaning, roofing — and we don't guess.</p>
+        </div>
+        <div class="why-card fade-in stagger-3">
+          <div class="why-icon">🤝</div>
+          <div class="why-title">Long-Term Partnership</div>
+          <p class="why-desc">Most clients stay 12+ months. Because the system keeps working — and keeps growing. This isn't a one-time project, it's infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section-pad">
+    <div class="container">
+      <div class="fade-in" style="text-align:center;max-width:500px;margin:0 auto 56px;">
+        <div class="section-label" style="justify-content:center;">Testimonials</div>
+        <h2 class="section-title">Don't Take Our Word For It</h2>
+      </div>
+      <div class="test-grid">
+        <div class="test-card fade-in stagger-1">
+          <div class="stars">★★★★★</div>
+          <p class="test-quote">"We went from 8 leads a month to 60+ — and we haven't touched our ad budget. The pages just keep ranking. Genuinely the best investment we've made in 3 years of running this business."</p>
+          <div class="test-author">
+            <div class="test-avatar" style="background:linear-gradient(135deg,#00E87B,#009944)">JH</div>
+            <div>
+              <div class="test-name">James H.</div>
+              <div class="test-role">Emergency Plumber · Leeds</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card fade-in stagger-2">
+          <div class="stars">★★★★★</div>
+          <p class="test-quote">"I was skeptical about SEO — we'd been burned before. But they showed me exactly which keywords they'd target and why. Within 8 weeks, our bathroom fitting pages were ranking. Booked solid."</p>
+          <div class="test-author">
+            <div class="test-avatar" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">SR</div>
+            <div>
+              <div class="test-name">Sarah R.</div>
+              <div class="test-role">Bathroom Renovation · Manchester</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card fade-in stagger-3">
+          <div class="stars">★★★★★</div>
+          <p class="test-quote">"We have 12 franchise locations and now each one has a full page strategy. The reporting dashboard alone is worth the investment — I can see exactly how many leads each location is generating every day."</p>
+          <div class="test-author">
+            <div class="test-avatar" style="background:linear-gradient(135deg,#f59e0b,#d97706)">MP</div>
+            <div>
+              <div class="test-name">Mike P.</div>
+              <div class="test-role">National Cleaning Franchise</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="cta">
+    <div class="container" style="position:relative;z-index:1;">
+      <span class="cta-label fade-in">Ready to Grow?</span>
+      <h2 class="cta-title fade-in stagger-1">Ready to Turn Google Into Your #1 Lead Source?</h2>
+      <p class="cta-sub fade-in stagger-2">Book a free 30-minute strategy call. We'll audit your current online presence and show you exactly how many leads you're leaving on the table.</p>
+      <div class="cta-actions fade-in stagger-3">
+        <a href="#" class="btn-cta-main" onclick="openModal(event)">Book a Free Strategy Call ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Lead<span>Forge</span> ◆</span>
+        <p class="footer-desc">A performance-driven agency building SEO landing page systems that generate consistent, daily inbound leads for local service businesses.</p>
+        <div class="footer-contact">
+          <a href="mailto:usama4650134@gmail.com">usama4650134@gmail.com</a>
+          <a href="https://www.linkedin.com/in/dev-god/">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">SEO Landing Pages</a>
+        <a href="#">Lead Generation</a>
+        <a href="#">Bulk Deployment</a>
+        <a href="#">CRO</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">Case Studies</a>
+        <a href="#">Our Process</a>
+        <a href="#">Results</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Niches</h4>
+        <a href="#">Plumbing &amp; HVAC</a>
+        <a href="#">Bathroom Renovation</a>
+        <a href="#">Cleaning Services</a>
+        <a href="#">Roofing</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 <span>LeadForge</span>. Built to rank. Designed to convert.</p>
+      <p class="footer-copy">Privacy Policy · Terms</p>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <h2>Get Your Free Audit</h2>
+      <p>Tell us about your business and we'll show you exactly where you're losing leads to competitors — and how to take them back.</p>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="John Smith">
+      </div>
+      <div class="form-group">
+        <label>Business Email</label>
+        <input type="email" placeholder="john@yourbusiness.co.uk">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+44 7700 000000">
+      </div>
+      <div class="form-group">
+        <label>Your Industry</label>
+        <select>
+          <option>Select your niche...</option>
+          <option>Plumbing &amp; Heating</option>
+          <option>Bathroom Renovation</option>
+          <option>Cleaning Services</option>
+          <option>Roofing</option>
+          <option>HVAC</option>
+          <option>Surveying</option>
+          <option>Landscaping</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="form-submit">Book My Free Strategy Call →</button>
+      <p class="form-note">No obligation. 30 minutes. We'll show you the opportunity before you spend a penny.</p>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
