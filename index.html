@@ -28,12 +28,12 @@
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-left">
-        <div class="hero-badge fade-in">◆ 1,000+ Pages Deployed &amp; Ranking</div>
+        <div class="hero-badge fade-in">◆ 800+ Pages Deployed &amp; Ranking</div>
         <h1 class="hero-title fade-in stagger-1">
           We Put Local Businesses on Page 1 — Then Fill Their Phone With <em>Leads.</em>
         </h1>
         <p class="hero-sub fade-in stagger-2">
-          We've built 1,000+ SEO landing pages that rank in local search and generate 40+ daily leads for service businesses across the UK &amp; beyond.
+          We've built 800+ SEO landing pages that rank in local search and generate 40+ daily leads for service businesses across the UK &amp; beyond.
         </p>
         <div class="hero-ctas fade-in stagger-3">
           <a href="#" class="btn-primary" onclick="openModal(event)">Get a Free Growth Audit ↗</a>
@@ -96,7 +96,7 @@
   <section id="stats">
     <div class="stats-grid">
       <div class="stat-card fade-in">
-        <span class="stat-num" data-target="1000" data-suffix="+">0</span>
+        <span class="stat-num" data-target="800" data-suffix="+">0</span>
         <span class="stat-label">Landing Pages Deployed</span>
       </div>
       <div class="stat-card fade-in stagger-1">
@@ -104,12 +104,154 @@
         <span class="stat-label">Daily Leads Generated</span>
       </div>
       <div class="stat-card fade-in stagger-2">
-        <span class="stat-num" data-target="12" data-suffix="+">0</span>
+        <span class="stat-num" data-target="500" data-suffix="+">0</span>
         <span class="stat-label">Niches Served</span>
       </div>
       <div class="stat-card fade-in stagger-3">
         <span class="stat-num" data-target="95" data-suffix="%">0</span>
         <span class="stat-label">Client Retention Rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUT NETWORK -->
+  <section class="network-section" id="our-network">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <span></span>
+          Portfolio Network
+        </div>
+        <h2 class="section-title">Our <em>Network</em> of<br>Live Projects</h2>
+        <p class="section-desc">
+          A curated collection of websites and digital products we have designed, developed,
+          and delivered across industries — each one live, functional, and built to perform.
+        </p>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Filter slider -->
+      <div class="filter-row">
+        <button class="filter-nav" id="filterPrev" aria-label="Previous">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="filter-track" id="filterTrack">
+          <!-- Buttons injected by JS -->
+        </div>
+        <button class="filter-nav" id="filterNext" aria-label="Next">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        <div class="search-wrap">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input class="search-input" type="search" id="searchInput" placeholder="Search…" />
+        </div>
+      </div>
+
+      <!-- Results meta -->
+      <div class="results-meta">
+        <p class="results-count" id="resultsMeta">Showing <strong id="visibleCount">0</strong> sites</p>
+        <button class="sort-toggle" id="sortToggle">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M7 12h10M11 18h2"/></svg>
+          <span id="sortLabel">A → Z</span>
+        </button>
+      </div>
+
+      <!-- Grid -->
+      <div class="links-grid" id="linksGrid">
+        <div class="no-results" id="noResults">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          No sites match your search.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEADS -->
+  <section class="slider-container">
+    <div class="container">
+      <h2 class="gallery-title section-title">Daily Leads Flow</h2>
+      <div class="gallery-slider" id="slider">
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+      </div>
+      <div class="slider-nav">
+          <button onclick="slide('left', this)">&#10094;</button>
+          <button onclick="slide('right', this)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFORMANCE -->
+  <section class="slider-container pt_0">
+    <div class="container">
+      <h2 class="gallery-title section-title">Sites Performance</h2>
+      <div class="gallery-slider" id="slider">
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/10/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/10/400/300');"></div>
+          </div>
+          <div class="card" onclick="openGalleryModal('https://picsum.photos/id/20/800/600')">
+              <div class="card-image" style="background-image: url('https://picsum.photos/id/20/400/300');"></div>
+          </div>
+      </div>
+      <div class="slider-nav">
+          <button onclick="slide('left', this)">&#10094;</button>
+          <button onclick="slide('right', this)">&#10095;</button>
       </div>
     </div>
   </section>
@@ -238,7 +380,7 @@
       <div class="fade-in">
         <div class="section-label">Our Process</div>
         <h2 class="section-title">The System Behind Every Result</h2>
-        <p class="section-sub">Not guesswork. Not templates. A repeatable growth engine built on 1,000+ pages of learning.</p>
+        <p class="section-sub">Not guesswork. Not templates. A repeatable growth engine built on 800+ pages of learning.</p>
       </div>
       <div class="process-steps">
         <div class="process-step fade-in">
@@ -301,7 +443,7 @@
         <div class="why-card fade-in stagger-2">
           <div class="why-icon">🏗️</div>
           <div class="why-title">Proven at Scale</div>
-          <p class="why-desc">1,000+ pages built. We've solved the problems that come at scale before they ever hit you. No learning curve on your dime.</p>
+          <p class="why-desc">800+ pages built. We've solved the problems that come at scale before they ever hit you. No learning curve on your dime.</p>
         </div>
         <div class="why-card fade-in stagger-3">
           <div class="why-icon">⚡</div>
@@ -458,6 +600,10 @@
       <button class="form-submit">Book My Free Strategy Call →</button>
       <p class="form-note">No obligation. 30 minutes. We'll show you the opportunity before you spend a penny.</p>
     </div>
+  </div>
+  <div id="imageGalleryModal" class="gallery-modal" onclick="closeGalleryModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="fullImage">
   </div>
 
   <script src="./assets/js/main.js"></script>
