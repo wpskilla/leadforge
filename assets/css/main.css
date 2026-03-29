@@ -1,37 +1,4 @@
-:root {
-	--black: #111111;
-	--bg: #f7f8f5;
-	--border: #dde6de;
-	--green: #00E87B;
-	--green-dim: rgba(0,232,123,0.12);
-	--green-glow: rgba(0,232,123,0.25);
-	--green-light: #e8f2ea;
-	--green-mid:   #c8deca;
-	--white: #FFFFFF;
-	--offwhite: #FAFAFA;
-	--gray-light: #EAEAEA;
-	--gray-mid: #BBBBBB;
-	--gray: #6B6B6B;
-	--dark: #0D0D0D;
-	--dark2: #181818;
-	--dark3: #222222;
-	--shadow: 0 2px 20px rgba(0,0,0,0.06);
-	--shadow-lg: 0 8px 40px rgba(0,0,0,0.1);
-	--shadow-sm:   0 1px 4px rgba(58,125,68,.08);
-	--shadow-md:   0 4px 20px rgba(58,125,68,.12);
-	--radius: 12px;
-	--radius-lg:   18px;
-	--font-display: 'Josefin Sans', sans-serif;
-	--font-body: 'DM Sans', sans-serif;
-	--font-mono: 'DM Mono', monospace;
-	--font-math: fantasy;
-	--surface:     #ffffff;
-	--surface-2:   #f0f4ee;
-	--text-dark:   #1a1f1b;
-	--text-mid:    #4a5550;
-	--text-light:  #8a9890;
-	--transition:  all .22s cubic-bezier(.4,0,.2,1);
-}
+:root { --black: #111111; --bg: #f7f8f5; --border: #dde6de; --green: #00E87B; --green-dim: rgba(0,232,123,0.12); --green-glow: rgba(0,232,123,0.25); --green-light: #e8f2ea; --green-mid:   #c8deca; --white: #FFFFFF; --offwhite: #FAFAFA; --gray-light: #EAEAEA; --gray-mid: #BBBBBB; --gray: #6B6B6B; --dark: #0D0D0D; --dark2: #181818; --dark3: #222222; --shadow: 0 2px 20px rgba(0,0,0,0.06); --shadow-lg: 0 8px 40px rgba(0,0,0,0.1); --shadow-sm:   0 1px 4px rgba(58,125,68,.08); --shadow-md:   0 4px 20px rgba(58,125,68,.12); --radius: 12px; --radius-lg:   18px; --font-display: 'Josefin Sans', sans-serif; --font-body: 'DM Sans', sans-serif; --font-mono: 'DM Mono', monospace; --font-math: fantasy; --surface:     #ffffff; --surface-2:   #f0f4ee; --text-dark:   #1a1f1b; --text-mid:    #4a5550; --text-light:  #8a9890; --transition:  all .22s cubic-bezier(.4,0,.2,1); }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body { font-family: var(--font-body); background: var(--offwhite); color: var(--black); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
@@ -222,11 +189,11 @@ footer { background: var(--dark); border-top: 1px solid #222; padding: 48px 5%; 
 .slider-nav button { background: #fff; border: 1px solid #ddd; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; transition: 0.2s; }
 .slider-nav button:hover { background: #333; color: #fff; }
 .gallery-title { text-align: center; margin-bottom: 40px; font-weight: 300; letter-spacing: 1px; }
-.gallery-slider { display: flex; gap: 25px; overflow-x: auto; scroll-behavior: smooth; padding: 20px 10px; scrollbar-width: none; }
+.gallery-slider {display: flex;gap: 25px;overflow-x: auto;scroll-behavior: smooth;padding: 20px 10px;scrollbar-width: none; }
 .gallery-slider::-webkit-scrollbar { display: none; }
-.gallery-slider .card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 8px rgba(60, 50, 40, 0.07), 0 1px 2px rgba(60, 50, 40, 0.05); transition: all 0.3s ease; cursor: pointer; flex: 0 0 calc(25% - 18px); border: 1.5px solid #e8e2d9; display: flex; justify-content: start; align-items: center; flex-direction: column; }
+.gallery-slider .card {background: #fff;border-radius: 14px;overflow: hidden;box-shadow: 0 2px 8px rgba(60, 50, 40, 0.07), 0 1px 2px rgba(60, 50, 40, 0.05);transition: all 0.3s ease;cursor: pointer;flex: 0 0 calc(33% - 14px);border: 1.5px solid #e8e2d9;justify-content: start;align-items: center;flex-direction: column;height: 150px;display: flex; }
 .gallery-slider .card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-.gallery-slider .card-image { height: 220px; background-position: center; width: 100%; display: flex; background-size: cover; }
+.gallery-slider .card-image {background-position: center;width: 104%;display: flex;background-size: cover;background-repeat: no-repeat;height: 100%; }
 .gallery-slider .card-content { padding: 1rem; display: flex; flex-direction: column; text-align: center; }
 .gallery-slider .card-content h3 { margin: 0; font-size: 1.1rem; }
 .gallery-slider .card-content p { margin: 0; font-size: 0.9rem; color: #777; }
